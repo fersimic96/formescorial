@@ -14,6 +14,16 @@ const postSchema = mongoose.Schema({
         type: Date,
         default: new Date(),
     },
+    tipofalla: {
+        type: Number,
+        default: 0,
+    },
+    minper: {
+        type: Number,
+        default: 0,
+    },
+    linea: String,
+    
 })
 
 var PostMessage = mongoose.model('PostMessage', postSchema);
